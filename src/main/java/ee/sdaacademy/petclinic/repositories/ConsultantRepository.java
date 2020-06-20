@@ -4,9 +4,8 @@ import ee.sdaacademy.petclinic.configs.HibernateUtils;
 import ee.sdaacademy.petclinic.models.Consultant;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
-
-import java.beans.Transient;
 import java.util.List;
+
 
 public class ConsultantRepository {
 
@@ -71,5 +70,6 @@ public class ConsultantRepository {
         transaction.commit();
         session.close();
     };
+
 }
 

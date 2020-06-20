@@ -1,5 +1,6 @@
 package ee.sdaacademy.petclinic;
 
+import java.time.LocalDate;
 import java.util.Scanner;
 
 public class Application {
@@ -50,7 +51,7 @@ public class Application {
             System.out.println(owner1.getFirstName() + " " + owner1.getLastName());
         });*/
 
-
+        //insertTestNames();
 
         do {
             displayMenu();
@@ -61,17 +62,7 @@ public class Application {
             }
             else if(option == 2){
                 addOwners();
-
-                /*String [] temp = new String [owners.length];
-                int ti = 0;
-                for (int i = 0; i < owners.length; i++){
-                    if(owners[i] != null){
-                        temp[ti] = owners[i];
-                        ti++;
-                    }
-                }*/
             }
-
             else if(option == 3){
                 removeOwners();
             }
@@ -84,8 +75,16 @@ public class Application {
 
     static void displayAllOwners() {
         System.out.println("______________________________\n-Owners-\n");
+        boolean isEmpty = true;
         for (int i = 0; i < owners.length; i++) {
-            System.out.println((i+1) + ". " + (owners[i] == null ? "--" : owners[i]));
+            if (owners[i] != null) {
+                System.out.println((i + 1) + ". " + owners[i]);
+                isEmpty = false;
+            }
+        }
+
+        if(isEmpty){
+            System.out.println("List is empty.");
         }
     }
 
@@ -93,13 +92,44 @@ public class Application {
         for (int i = 0; i < owners.length; i++) {
             if(owners[i] == null){
                 System.out.print("Name: ");
-                owners[i] = scanner.next();
-                break;
+                owners[i] = scanner.nextLine();
+                System.out.print("Date of Birth: ");
+                String date = scanner.nextLine();
+                //default, ISO_LOCAL_DATE
+                LocalDate localDate = LocalDate.parse(date);
+                System.out.print("Address: ");
+                owners[i] = scanner.nextLine();
+                System.out.print("Phone number: ");
+                owners[i] = scanner.nextLine();
+                System.out.print("Email: ");
+                owners[i] = scanner.nextLine();
+                System.out.println("Would you like to register your pet now? yes/no");
+                String petReg = scanner.next();
+                if(petReg.equalsIgnoreCase("yes")){
+                    System.out.print("What is your pet's name? ");
+                    String petName = scanner.nextLine();
+                    scanner.nextLine();
+                    System.out.print("Pet's DOB: ");
+                    String petDate = scanner.nextLine();
+                    LocalDate localDate2 = LocalDate.parse(petDate);
+                    System.out.print("What is your pet type? ");
+                    String petType = scanner.nextLine();
+                    System.out.println("Thank you for your pet details!");
+                    break;
+                }else{
+                    System.out.println("Registration is over!");
+                    break;
+                }
             }
         }
+
+        /*String petRegistration = scanner.nextLine();
+        System.out.println("What is the type of you pet?");
+        String petType = scanner.nextLine();
+        System.out.println("Your pets date of birth?");*/
     }
 
-    static  void removeOwners(){
+    static void removeOwners(){
         System.out.print("Name: ");
         String name = scanner.next();
         for(int i = 0; i < owners.length; i++){
@@ -108,6 +138,16 @@ public class Application {
                 break;
             }
         }
+
+        String [] temp = new String [owners.length];
+        int ti = 0;
+        for (int i = 0; i < owners.length; i++){
+            if(owners[i] != null){
+                temp[ti] = owners[i];
+                ti++;
+            }
+        }
+        owners = temp;
     }
 
     static void displayMenu(){
@@ -122,7 +162,16 @@ public class Application {
     static int getOption(){
         System.out.print("Option: ");
         int option = scanner.nextInt();
+        scanner.nextLine();
         System.out.println();
         return option;
     }
+
+    /*static void insertTestNames(){
+        owners[0] = "Tom";
+        owners[1] = "Mike";
+        owners[2] = "Sue";
+        owners[3] = "Fiona";
+        owners[4] = "Valerie";
+    }*/
 }

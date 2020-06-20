@@ -24,3 +24,4 @@ public class Owner {
     @OneToMany(mappedBy = "owner", fetch = FetchType.EAGER)
     List<Pet> petList;
 }
+

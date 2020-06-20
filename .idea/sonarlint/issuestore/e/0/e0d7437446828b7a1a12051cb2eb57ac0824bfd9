@@ -1,3 +1,19 @@
 
-]
-java:S2094"BRemove this empty class, write its code or make it an "interface".(ôš—Ëÿÿÿÿÿ
+E
+java:S1148-"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Ü½ÄŠ­.
+m
+java:S22594"PA "NullPointerException" could be thrown; "getSessionFactory()" can return null.(øõ²®8Ü½ÄŠ­.
+>
+java:S1116"Remove this empty statement.(‚Û©úÿÿÿÿ8Ü½ÄŠ­.
+g
+java:S3252"JUse static access with "org.hibernate.cfg.AvailableSettings" for "DRIVER".(ùÎ¥ç8Ü½ÄŠ­.
+d
+java:S3252"GUse static access with "org.hibernate.cfg.AvailableSettings" for "URL".(©ıö½8Ü½ÄŠ­.
+e
+java:S3252"HUse static access with "org.hibernate.cfg.AvailableSettings" for "USER".(è©šŒ8Ü½ÄŠ­.
+e
+java:S3252"HUse static access with "org.hibernate.cfg.AvailableSettings" for "PASS".(›Áìë8Ü½ÄŠ­.
+h
+java:S3252"KUse static access with "org.hibernate.cfg.AvailableSettings" for "DIALECT".(ºà›Á8Ü½ÄŠ­.
+n
+java:S3252"LUse static access with "org.hibernate.cfg.AvailableSettings" for "SHOW_SQL".(ŠÛ•ùÿÿÿÿ8Ü½ÄŠ­.

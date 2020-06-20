@@ -32,5 +32,5 @@ public class Pet {
     Consultant consultant;
     @OneToMany(mappedBy = "petId", fetch = FetchType.EAGER)
     //@JoinColumn(name = "appointmentId")
-    List<Appointment> appointmentList;
+            List<Appointment> appointmentList;
 }

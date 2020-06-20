@@ -1,5 +1,6 @@
 package ee.sdaacademy.petclinic.models;
 
+
 import lombok.Getter;
 import lombok.Setter;
 

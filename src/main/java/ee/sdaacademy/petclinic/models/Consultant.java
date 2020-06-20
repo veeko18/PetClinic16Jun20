@@ -23,3 +23,4 @@ public class Consultant {
     @OneToMany(mappedBy = "consultant", fetch = FetchType.EAGER)
     List<Pet> petList;
 }
+

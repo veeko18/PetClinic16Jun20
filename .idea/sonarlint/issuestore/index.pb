@@ -27,3 +27,5 @@ u
 Esrc/main/java/ee/sdaacademy/petclinic/repositories/petRepository.java,9\e\9e83f17eef66a0b5555ff40880feb69b1293ce1a
 u
 Esrc/main/java/ee/sdaacademy/petclinic/repositories/vetRepository.java,0\9\091664468940d8cfdbc233e79e3d8f28a956fdd6
+f
+6src/main/java/ee/sdaacademy/petclinic/Application.java,2\b\2b473a6d965645422c1d5dde6736abe721521afc

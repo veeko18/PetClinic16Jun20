@@ -19,5 +19,5 @@ public class PetType {
     String name;
     @OneToMany(mappedBy = "petType", fetch = FetchType.EAGER)
     //@JoinColumn(name = "petId")
-    List<Pet> petList;
+            List<Pet> petList;
 }

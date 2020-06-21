@@ -45,9 +45,6 @@ public class Application {
             System.out.println(appointment.getConsultant().getName());
         });*/
 
-        /*OwnerRepository ownerRepository = new OwnerRepository();
-        ownerRepository.findAll().stream().forEach(owner -> {
-            System.out.println(owner.getFirstName() + " " + owner.getLastName() + " " + owner.getAddress());});*/
 
 
         /*ownerRepository.findAllAlphabetically().stream().forEach(owner1 -> {

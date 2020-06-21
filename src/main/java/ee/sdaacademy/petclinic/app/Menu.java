@@ -10,7 +10,10 @@ import ee.sdaacademy.petclinic.scanner.OwnerScanner;
 import ee.sdaacademy.petclinic.scanner.PetScanner;
 import ee.sdaacademy.petclinic.scanner.PetTypeScanner;
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> c666ce9aa3f40279f8640ec97ef0c37d5a8513f8
 import java.util.List;
 import java.util.Scanner;
 
@@ -36,6 +39,7 @@ public class Menu {
     private static void menuOptions() {
         switch (getOption()) {
             case 1:
+<<<<<<< HEAD
                 ConsultationScanner.consultation();
                 break;
             case 2:
@@ -60,6 +64,32 @@ public class Menu {
                 System.out.println("Exiting..");
                 System.out.println("Thanks for using pet clinic service!");
                 break;
+=======
+                ConsultantRepository.consultation();
+                break;
+            case 2:
+                OwnerRepository.ownerRegistration();
+                break;
+            case 3:
+                PetRepository.petRegistration();
+                break;
+            case 4:
+                removeOwner();
+                break;
+            case 5:
+                removePet();
+                break;
+            case 6:
+                displayAllPetTypes();
+                break;
+            case 7:
+                displayAllOwners();
+                break;
+            case 8:
+                System.out.println("Exiting..");
+                System.out.println("Thanks for using pet clinic service!");
+                break;
+>>>>>>> c666ce9aa3f40279f8640ec97ef0c37d5a8513f8
             default:
                 System.out.println("There is no such an option! Please try again.");
                 menuOptions();
@@ -112,7 +142,11 @@ public class Menu {
         }
     }
 
+<<<<<<< HEAD
     public static void displayAllOwners() {
+=======
+    private static void displayAllOwners() {
+>>>>>>> c666ce9aa3f40279f8640ec97ef0c37d5a8513f8
         System.out.println("______________________________\n-Owners-\n");
         OwnerRepository ownerRepository = new OwnerRepository();
         List<Owner> ownerList = ownerRepository.findAll();

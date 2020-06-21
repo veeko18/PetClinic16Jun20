@@ -56,7 +56,11 @@ public class PetRepository {
     };
 
     //delete from database by Pets id
+<<<<<<< HEAD
     public void deleteById (int petId){
+=======
+    public void deleteById(int petId){
+>>>>>>> c666ce9aa3f40279f8640ec97ef0c37d5a8513f8
         Session session = HibernateUtils.getSessionFactory().openSession();
         Transaction transaction = session.beginTransaction();
         session.delete(petId);

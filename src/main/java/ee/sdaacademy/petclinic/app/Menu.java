@@ -16,61 +16,58 @@ public class Menu {
     public static void menuOptions() {
         System.out.println("Choose suitable option for you: ");
 
-        displayMenu();
-
-        int option = getOption();
-
         do {
+            displayMenu();
+
+            int option = getOption();
+
+
             switch (option) {
                 case 1:
-                    displayMenu();
-                    break;
-                case 2:
                     ConsultantRepository.consultation();
                     break;
-                case 3:
+                case 2:
                     OwnerRepository.ownerRegistration();
                     break;
-                case 4:
+                case 3:
                     PetRepository.petRegistration();
                     break;
-                case 5:
+                case 4:
                     removeOwner();
                     break;
-                case 6:
+                case 5:
                     removePet();
                     break;
-                case 7:
+                case 6:
                     displayAllPetTypes();
                     break;
-                case 8:
+                case 7:
                     displayAllOwners();
                     break;
-                case 9:
+                case 8:
                     System.out.println("Exiting");
                     break;
                 default:
                     System.out.println("There is no such an option!");
             }
-        }while (true);
+        } while (true);
     }
 
     static void displayMenu() {
-        do {
-            System.out.println("______________________________\n-Menu-\n");
-            System.out.println();
-            System.out.println("1 - Display menu");
-            System.out.println("2 - Consultation");
-            System.out.println("3 - Owner registration");
-            System.out.println("4 - Pet registration");
-            System.out.println("5 - Remove owner");
-            System.out.println("6 - Remove pet");
-            System.out.println("7 - Display all pet types");
-            System.out.println("8 - Display all owners");
-            System.out.println("9 - Exit");
-        }while (getOption() != 9);
+
+        System.out.println("______________________________\n-Menu-\n");
+        System.out.println();
+        System.out.println("1 - Consultation");
+        System.out.println("2 - Owner registration");
+        System.out.println("3 - Pet registration");
+        System.out.println("4 - Remove owner");
+        System.out.println("5 - Remove pet");
+        System.out.println("6 - Display all pet types");
+        System.out.println("7 - Display all owners");
+        System.out.println("8 - Exit");
 
     }
+
 
     static void removeOwner() {
         System.out.print("Name: ");

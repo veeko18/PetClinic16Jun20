@@ -4,30 +4,12 @@ import ee.sdaacademy.petclinic.configs.HibernateUtils;
 import ee.sdaacademy.petclinic.models.Pet;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
+
+import java.time.LocalDate;
 import java.util.List;
 import java.util.Scanner;
 
 public class PetRepository {
-
-    public static void petRegistration(){
-
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.println("Would you like to register you pet? yes/no");
-        String reply = scanner.next();
-        if(reply.equalsIgnoreCase("yes")){
-            System.out.println("What is your pet's name?");
-            String petName = scanner.nextLine();
-            String petRegistration = scanner.nextLine();
-            System.out.println("What is the type of you pet?");
-            String petType = scanner.nextLine();
-            System.out.println("Your pets date of birth?");
-
-            System.out.println("Registration of your pet is complete!");
-        } else {
-            System.out.println("You quit registration!");
-        }
-    }
 
     //find all Pets
     public List<Pet> findAll(){
@@ -74,7 +56,7 @@ public class PetRepository {
     };
 
     //delete from database by Pets id
-    public void deleteById(Pet petId){
+    public void deleteById (int petId){
         Session session = HibernateUtils.getSessionFactory().openSession();
         Transaction transaction = session.beginTransaction();
         session.delete(petId);

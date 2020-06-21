@@ -11,48 +11,24 @@ import java.util.Scanner;
 
 public class OwnerRepository {
 
-    public static void ownerRegistration() {
-
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.print("Enter username: ");
-        String userName = scanner.nextLine();
-        Password.addPassword();
-        System.out.print("Date of Birth: ");
-        String date = scanner.nextLine();
-        //default, ISO_LOCAL_DATE
-        LocalDate localDate = LocalDate.parse(date);
-        System.out.print("Address: ");
-        String address = scanner.nextLine();
-        System.out.print("Phone number: ");
-        String phoneNumber = scanner.nextLine();
-        System.out.print("Email: ");
-        String email = scanner.nextLine();
-        System.out.print("Name for database: ");
-        String fullName = scanner.next();
-        System.out.println("Your registration is complete!\n");
-    }
-
     //find all Owners
-    public List<Owner> findAll(){
+    public List<Owner> findAll() {
         Session session = HibernateUtils.getSessionFactory().openSession();
-        List<Owner> owner = session.createQuery("select owner " +
-                "from Owner owner ", Owner.class).getResultList();
+        List<Owner> owner = session.createQuery("select * from owner ", Owner.class).getResultList();
         session.close();
-        return owner;
-    }
-
-    //find Owner by Owner alphabetically
-    public List <Owner> findAllAlphabetically() {
-        Session session = HibernateUtils.openSession();
-        List<Owner> owner = session.createQuery("select owner" +
-                " from Owner owner order by owner.firstName", Owner.class)
-                .getResultList();
         return owner;
     };
 
+    //find Owner by Owner alphabetically
+    public List<Owner> findAllAlphabetically() {
+        Session session = HibernateUtils.openSession();
+        return session.createQuery("select owner" +
+                " from Owner owner order by owner.firstName", Owner.class)
+                .getResultList();
+    };
+
     //find Owners by id
-    public Owner findById(Integer id){
+    public Owner findById(Integer id) {
         Session session = HibernateUtils.openSession();
         Owner owner = session.find(Owner.class, id);
         session.close();
@@ -60,7 +36,7 @@ public class OwnerRepository {
     };
 
     //save to database
-    public void save(Owner owner){
+    public void save(Owner owner) {
         Session session = HibernateUtils.getSessionFactory().openSession();
         Transaction transaction = session.beginTransaction();
         session.save(owner);
@@ -69,7 +45,7 @@ public class OwnerRepository {
     };
 
     //delete from database
-    public void delete(Owner owner){
+    public void delete(Owner owner) {
         Session session = HibernateUtils.getSessionFactory().openSession();
         Transaction transaction = session.beginTransaction();
         session.delete(owner);
@@ -78,7 +54,7 @@ public class OwnerRepository {
     };
 
     //delete from database by Owners id
-    public void deleteById(Owner ownerId){
+    public void deleteById(int ownerId) {
         Session session = HibernateUtils.getSessionFactory().openSession();
         Transaction transaction = session.beginTransaction();
         session.delete(ownerId);
@@ -87,7 +63,7 @@ public class OwnerRepository {
     };
 
     //update database
-    public void update(Owner owner){
+    public void update(Owner owner) {
         Session session = HibernateUtils.getSessionFactory().openSession();
         Transaction transaction = session.beginTransaction();
         session.update(owner);

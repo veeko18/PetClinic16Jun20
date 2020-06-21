@@ -10,7 +10,7 @@ public class Application {
 
     public static void main(String[] args) {
 
-        Menu.menuOptions();
+        Menu menu = new Menu();
 
         /*PetTypeRepository petTypeRepository = new PetTypeRepository();
         petTypeRepository.findAll().stream().forEach(petTypes -> {

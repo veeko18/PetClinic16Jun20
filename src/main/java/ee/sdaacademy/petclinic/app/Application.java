@@ -10,7 +10,7 @@ public class Application {
 
     public static void main(String[] args) {
 
-        Menu.menuOptions();
+        Menu menu = new Menu();
 
         /*PetTypeRepository petTypeRepository = new PetTypeRepository();
         petTypeRepository.findAll().stream().forEach(petTypes -> {
@@ -45,9 +45,6 @@ public class Application {
             System.out.println(appointment.getConsultant().getName());
         });*/
 
-        /*OwnerRepository ownerRepository = new OwnerRepository();
-        ownerRepository.findAll().stream().forEach(owner -> {
-            System.out.println(owner.getFirstName() + " " + owner.getLastName() + " " + owner.getAddress());});*/
 
 
         /*ownerRepository.findAllAlphabetically().stream().forEach(owner1 -> {

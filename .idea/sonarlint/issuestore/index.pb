@@ -59,3 +59,13 @@ g
 7src/main/java/ee/sdaacademy/petclinic/app/Password.java,d\5\d51256a8dbc77732a161df2867312cba406f52c7
 j
 :src/main/java/ee/sdaacademy/petclinic/app/Application.java,b\b\bbb47811a9c3da2dd058ea35a1a8fa431bec009b
+v
+Fsrc/main/java/ee/sdaacademy/petclinic/scanner/ConsultationScanner.java,4\2\427254e870edd6dd71c7d8f301376c9602a1733d
+o
+?src/main/java/ee/sdaacademy/petclinic/scanner/OwnerScanner.java,3\7\37fa46358b0d90d4c6953ae7b60996fc28d895c3
+m
+=src/main/java/ee/sdaacademy/petclinic/scanner/PetScanner.java,0\5\0565be86e1e53ae8c27608685eec8dbc24f44f8d
+c
+3src/main/java/ee/sdaacademy/petclinic/app/Menu.java,f\b\fb402f097adb85156da2f02349dd98f15d27de1e
+q
+Asrc/main/java/ee/sdaacademy/petclinic/scanner/PetTypeScanner.java,7\c\7cdb8da815b73a8f8925a586190b11f8ffe1c637

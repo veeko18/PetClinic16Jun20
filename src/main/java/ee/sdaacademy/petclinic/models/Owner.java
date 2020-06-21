@@ -1,5 +1,6 @@
 package ee.sdaacademy.petclinic.models;
 
+import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -9,11 +10,11 @@ import java.util.List;
 
 @Entity
 @Table
-@Getter
-@Setter
+@Data
 public class Owner {
 
     @Id
+    @GeneratedValue
     Integer ownerId;
     String firstName;
     String lastName;

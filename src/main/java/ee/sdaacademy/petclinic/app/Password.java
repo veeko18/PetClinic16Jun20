@@ -14,8 +14,8 @@ public class Password {
     //valid password example: $password@
     static boolean validatePassword(String password){
         int length = password.length();
-        if ((length>5 && length<26) && (password.charAt(0)=='$')
-                && (password.charAt(length-1)== '@')){
+        if (((length > 5) && (length < 26)) && (password.startsWith("$"))
+                && (password.endsWith("@"))) {
             return true;
         }else{
             return false;}

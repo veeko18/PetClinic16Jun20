@@ -9,7 +9,7 @@ public class ConsultationScanner {
         Scanner scanner = new Scanner(System.in);
         String [] owners = new String[10];
 
-        System.out.println("Please enter your name: ");
+        System.out.print("Please enter your name: ");
         String name = scanner.nextLine();
         System.out.println("Welcome to the Consultation room!");
         System.out.println("You are starting consultation");

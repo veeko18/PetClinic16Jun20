@@ -1,5 +1,6 @@
 package ee.sdaacademy.petclinic.models;
 
+import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -9,13 +10,11 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "admin")
-@Getter
-@Setter
+@Data
 public class Admin {
     @Id
     @GeneratedValue
-    Integer adminId;
+    Long adminId;
     String firstName;
     String lastName;
     String telephoneNumber;

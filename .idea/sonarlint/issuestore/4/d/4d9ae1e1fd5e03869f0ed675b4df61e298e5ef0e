@@ -1,15 +1,17 @@
 
 7
-java:S11165"Remove this empty statement.(ôŸìúÿÿÿÿ
+java:S1116-"Remove this empty statement.(ôŸìúÿÿÿÿ
 7
-java:S1116,"Remove this empty statement.(ôŸìúÿÿÿÿ
+java:S1116?"Remove this empty statement.(ôŸìúÿÿÿÿ
+b
+java:S2095"EUse try-with-resources or close this "Session" in a "finally" clause.(ˆËäí8‹²È­­.
 7
-java:S1116#"Remove this empty statement.(ôŸìúÿÿÿÿ
+java:S11166"Remove this empty statement.(ôŸìúÿÿÿÿ
 7
-java:S1116>"Remove this empty statement.(ôŸìúÿÿÿÿ
+java:S1116$"Remove this empty statement.(ôŸìúÿÿÿÿ
+7
+java:S1116"Remove this empty statement.(ôŸìúÿÿÿÿ
 v
-java:S1488"[Immediately return this expression instead of assigning it to the temporary variable "pet".(ÑÌ¡Üıÿÿÿÿ
+java:S1488"[Immediately return this expression instead of assigning it to the temporary variable "pet".(ÑÌ¡Üıÿÿÿÿ
 7
-java:S1116"Remove this empty statement.(ôŸìúÿÿÿÿ
-7
-java:S1116G"Remove this empty statement.(ôŸìúÿÿÿÿ
+java:S1116H"Remove this empty statement.(ôŸìúÿÿÿÿ

@@ -4,10 +4,8 @@ import ee.sdaacademy.petclinic.configs.HibernateUtils;
 import ee.sdaacademy.petclinic.models.Pet;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
-
-import java.time.LocalDate;
 import java.util.List;
-import java.util.Scanner;
+
 
 public class PetRepository {
 
@@ -56,11 +54,7 @@ public class PetRepository {
     };
 
     //delete from database by Pets id
-<<<<<<< HEAD
     public void deleteById (int petId){
-=======
-    public void deleteById(int petId){
->>>>>>> c666ce9aa3f40279f8640ec97ef0c37d5a8513f8
         Session session = HibernateUtils.getSessionFactory().openSession();
         Transaction transaction = session.beginTransaction();
         session.delete(petId);

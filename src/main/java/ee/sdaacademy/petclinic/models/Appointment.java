@@ -1,27 +1,23 @@
 package ee.sdaacademy.petclinic.models;
 
+import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
 import java.sql.Time;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.Date;
 import java.util.List;
 
 @Entity
-@Table
-@Getter
-@Setter
+@Data
 public class Appointment {
     @Id
-    Integer appointmentId;
+    Long appointmentId;
     String description;
-    Date date; //date of consultation
-    Time time;
-    @ManyToOne
-    @JoinColumn(name = "consultantId")
+    LocalDateTime time;
     Consultant consultant;
-    @ManyToOne
-    @JoinColumn(name = "petId")
     Pet pet;
 }

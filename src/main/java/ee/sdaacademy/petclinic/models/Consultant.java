@@ -1,5 +1,6 @@
 package ee.sdaacademy.petclinic.models;
 
+import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -8,19 +9,17 @@ import java.util.Date;
 import java.util.List;
 
 @Entity
-@Table
-@Getter
-@Setter
+@Data
 public class Consultant {
 
     @Id
     @GeneratedValue
     Integer consultantId;
     String name;
-    @OneToMany(mappedBy = "consultant", fetch = FetchType.EAGER)
+    @OneToMany()
     List<Appointment> appointmentList;
 
-    @OneToMany(mappedBy = "consultant", fetch = FetchType.EAGER)
+    @OneToMany()
     List<Pet> petList;
 }
 

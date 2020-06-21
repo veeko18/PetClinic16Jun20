@@ -1,14 +1,11 @@
 package ee.sdaacademy.petclinic.repositories;
 
-import ee.sdaacademy.petclinic.app.Password;
 import ee.sdaacademy.petclinic.configs.HibernateUtils;
 import ee.sdaacademy.petclinic.models.Owner;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
-
-import java.time.LocalDate;
 import java.util.List;
-import java.util.Scanner;
+
 
 public class OwnerRepository {
 
@@ -26,13 +23,7 @@ public class OwnerRepository {
         return session.createQuery("select owner" +
                 " from Owner owner order by owner.firstName", Owner.class)
                 .getResultList();
-<<<<<<< HEAD
     };
-=======
-    }
-
-    ;
->>>>>>> c666ce9aa3f40279f8640ec97ef0c37d5a8513f8
 
     //find Owners by id
     public Owner findById(Integer id) {
@@ -40,9 +31,7 @@ public class OwnerRepository {
         Owner owner = session.find(Owner.class, id);
         session.close();
         return owner;
-    }
-
-    ;
+    };
 
     //save to database
     public void save(Owner owner) {
@@ -51,9 +40,7 @@ public class OwnerRepository {
         session.save(owner);
         transaction.commit();
         session.close();
-    }
-
-    ;
+    };
 
     //delete from database
     public void delete(Owner owner) {
@@ -62,9 +49,7 @@ public class OwnerRepository {
         session.delete(owner);
         transaction.commit();
         session.close();
-    }
-
-    ;
+    };
 
     //delete from database by Owners id
     public void deleteById(int ownerId) {
@@ -73,9 +58,7 @@ public class OwnerRepository {
         session.delete(ownerId);
         transaction.commit();
         session.close();
-    }
-
-    ;
+    };
 
     //update database
     public void update(Owner owner) {
@@ -84,12 +67,7 @@ public class OwnerRepository {
         session.update(owner);
         transaction.commit();
         session.close();
-<<<<<<< HEAD
     };
 }
-=======
-    }
 
-    ;
-}
->>>>>>> c666ce9aa3f40279f8640ec97ef0c37d5a8513f8
+

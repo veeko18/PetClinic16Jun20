@@ -1,0 +1,18 @@
+
+M
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8òñá°­.
+G
+java:S1481"*Remove this unused "email" local variable.(Ø×…ù8Í±¿°­.
+K
+java:S1481".Remove this unused "localDate" local variable.(ıÜ©²8Í±¿°­.
+V
+java:S1118
+":Add a private constructor to hide the implicit public one.(ñ¸ê)8ÜÛ˜°­.
+R
+java:S1481"0Remove this unused "phoneNumber" local variable.(Ï–’›ÿÿÿÿÿ8Í±¿°­.
+J
+java:S1481"-Remove this unused "userName" local variable.(¸Ç·ğ8Í±¿°­.
+O
+java:S1481"-Remove this unused "fullName" local variable.(œË¤ÿÿÿÿÿ8Í±¿°­.
+N
+java:S1481",Remove this unused "address" local variable.(Èüúùÿÿÿÿ8Í±¿°­.

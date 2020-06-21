@@ -1,8 +1,7 @@
 package ee.sdaacademy.petclinic.scanner;
 
 import ee.sdaacademy.petclinic.app.Password;
-import ee.sdaacademy.petclinic.models.Owner;
-import ee.sdaacademy.petclinic.repositories.OwnerRepository;
+
 
 import java.time.LocalDate;
 import java.util.List;

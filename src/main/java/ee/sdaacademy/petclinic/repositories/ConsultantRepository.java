@@ -10,7 +10,7 @@ import java.util.Scanner;
 
 public class ConsultantRepository {
 
-        public static void ConsultantInput(){
+        public static void consultation(){
 
             Scanner scanner = new Scanner(System.in);
             String [] owners = new String[10];

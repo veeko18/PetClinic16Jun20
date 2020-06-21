@@ -1,0 +1,15 @@
+
+W	java:S125$"<This block of commented-out lines of code should be removed.(šÄM8ñåÂŠ­.
+X	java:S1251"<This block of commented-out lines of code should be removed.(ğâÅ»8ñåÂŠ­.
+P
+java:S1128".Remove this unused import 'java.util.Scanner'.(ÒÜÅ¸úÿÿÿÿ8¡Ê§­.
+]	java:S125"<This block of commented-out lines of code should be removed.(¤Û«ñÿÿÿÿÿ8ñåÂŠ­.
+R
+java:S1128"0Remove this unused import 'java.time.LocalDate'.(›‘¬èıÿÿÿÿ8­±Ç§­.
+]	java:S125"<This block of commented-out lines of code should be removed.(´ˆ»¦øÿÿÿÿ8ñåÂŠ­.
+X	java:S125*"<This block of commented-out lines of code should be removed.(½Ù¨8ñåÂŠ­.
+]	java:S1256"<This block of commented-out lines of code should be removed.(÷†ˆóúÿÿÿÿ8ñåÂŠ­.
+]	java:S125"<This block of commented-out lines of code should be removed.(ã½Æëùÿÿÿÿ8ñåÂŠ­.
+X	java:S125"<This block of commented-out lines of code should be removed.(·ëıÆ8ÂÖò§­.
+X	java:S125,"<This block of commented-out lines of code should be removed.(ğÀ¶–8ñåÂŠ­.
+]	java:S125:"<This block of commented-out lines of code should be removed.(øìııÿÿÿÿ8ÔĞ¹—­.

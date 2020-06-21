@@ -27,8 +27,6 @@ u
 Esrc/main/java/ee/sdaacademy/petclinic/repositories/petRepository.java,9\e\9e83f17eef66a0b5555ff40880feb69b1293ce1a
 u
 Esrc/main/java/ee/sdaacademy/petclinic/repositories/vetRepository.java,0\9\091664468940d8cfdbc233e79e3d8f28a956fdd6
-f
-6src/main/java/ee/sdaacademy/petclinic/Application.java,2\b\2b473a6d965645422c1d5dde6736abe721521afc
 w
 Gsrc/main/java/ee/sdaacademy/petclinic/repositories/AdminRepository.java,3\3\33d612c8b2c6425620bcd63440c3ad8a47fafa9f
 }
@@ -57,3 +55,7 @@ u
 Esrc/main/java/ee/sdaacademy/petclinic/repositories/PetRepository.java,4\d\4d9ae1e1fd5e03869f0ed675b4df61e298e5ef0e
 u
 Esrc/main/java/ee/sdaacademy/petclinic/repositories/VetRepository.java,e\3\e3df53d1e39da16225b436e1cebb719b8fda4fdc
+g
+7src/main/java/ee/sdaacademy/petclinic/app/Password.java,d\5\d51256a8dbc77732a161df2867312cba406f52c7
+j
+:src/main/java/ee/sdaacademy/petclinic/app/Application.java,b\b\bbb47811a9c3da2dd058ea35a1a8fa431bec009b

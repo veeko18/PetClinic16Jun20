@@ -10,8 +10,7 @@ public class Application {
 
     public static void main(String[] args) {
 
-        //ConsultantRepository.ConsultantInput();
-        OwnerRepository.OwnerInput();
+        Menu.menuOptions();
 
         /*PetTypeRepository petTypeRepository = new PetTypeRepository();
         petTypeRepository.findAll().stream().forEach(petTypes -> {
